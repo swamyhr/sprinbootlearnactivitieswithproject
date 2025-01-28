@@ -1,0 +1,6 @@
+1. Spring boot goal to help developers in configuration of spring application
+2. Provide pre-configured starter for example "spring-boot-starter-jpa" includes all the dependencies needed to use Spring Data JPA and Hibernate.
+3. Provides embedded tomcat server, helps developers to avoid manual server configuration for application.
+4. Auto-configuration
+	a. based on jar dependencies springboot will configure the application to up and running, for example ComponentScan, Dispatcher servlet, view resolver
+	b. In case of Hibernate / JPA , Data source , Entity Manager factory etc will be configure by sprinboot
