@@ -1,6 +1,21 @@
+Sprinboot is extension of spring framework
+
 1. Spring boot goal to help developers in configuration of spring application
 2. Provide pre-configured starter for example "spring-boot-starter-jpa" includes all the dependencies needed to use Spring Data JPA and Hibernate.
 3. Provides embedded tomcat server, helps developers to avoid manual server configuration for application.
 4. Auto-configuration
 	a. based on jar dependencies springboot will configure the application to up and running, for example ComponentScan, Dispatcher servlet, view resolver
 	b. In case of Hibernate / JPA , Data source , Entity Manager factory etc will be configure by sprinboot
+
+Springboot creation steps
+	1. link spring initliaser link  -> https://start.spring.io/
+	2. Project dependency manager (Maven / Gradle) and Language (ex, java, kotlin)
+	3. Select springboot version
+	4. Mention project artifact, name and description
+	5. Package name and package type 
+	6. For spring boot 3 or greater, Java 17+ must be selected 
+	7. Select Java version
+	8. Left side window where need to select the dependencies for your project typical ones are 
+		a. Spring web
+		b. Spring Data JPA, 
+ 		c. MYSQL Driver (for MySQL support)
