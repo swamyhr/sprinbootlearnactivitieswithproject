@@ -19,3 +19,26 @@ Springboot creation steps
 		a. Spring web
 		b. Spring Data JPA, 
  		c. MYSQL Driver (for MySQL support)
+
+folder structure
+	src -> main -> java : is the place where we do put our source java code 
+	src -> main -> resource : this is the folder we do keep static and UI related contents and application.properties file (very important since contains all the configuration properties of an application such as database, security and port number etc.)
+	test folder -> place to place / keep junit unit test files
+	pom.xml (project object model.xml) => most important file , since it does contains all the project dependencies and plugin details.
+		for example -> spring-boot-starter-web (which in turn will include spring-web, spring-webmvc, tomcat server etc)
+
+In springboot application  
+	the entry point is the class which consists main method and @SprinBootApplication annotation
+
+some of the annotation
+	@Controller -> to make java class as controller class
+	@ResponseBody -> to convert Java object to JSON while sending response
+	@RestController -> replaces @Controller and @ResponseBody annotation 
+	
+	---- Http Method related annotation -----
+	@GetMapping -> to handle read resource related request
+	@PostMapping -> to handle resource creation request
+	@PutMapping -> to update the existing resource with new / updated details
+	@DeleteMapping -> to remove permanently the resource from storage place(database) 
+
+	  
