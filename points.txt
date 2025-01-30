@@ -41,4 +41,7 @@ some of the annotation
 	@PutMapping -> to update the existing resource with new / updated details
 	@DeleteMapping -> to remove permanently the resource from storage place(database) 
 
-	  
+	 we can create Java Object and send as reponse , it will be converted as JSON by springboot as indicated using @RestController
+	@PathVariable -> one of the way to send data in URL to server 
+	name used in url path mentioned in server side will be used to fetch the data from url
+	for example : student/1 -> in server side for this url the set up would be student/{id} -> here "id" will be used to fetch the detail, here that is student id 1 
