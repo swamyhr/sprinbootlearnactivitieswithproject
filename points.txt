@@ -45,3 +45,11 @@ some of the annotation
 	@PathVariable -> one of the way to send data in URL to server 
 	name used in url path mentioned in server side will be used to fetch the data from url
 	for example : student/1 -> in server side for this url the set up would be student/{id} -> here "id" will be used to fetch the detail, here that is student id 1 
+
+@RequestParam -> used to query parameter in request url
+	example -> localhost:8080/users?id={idvalue} > here idValue is queryParameter
+	@RequestParam type variable
+
+	how to handle multiple query parameters 
+	we need to add multiple @RequestParam type variable 
+	
