@@ -55,3 +55,15 @@ some of the annotation
 
 @PathVariable is to bind value from url to method parameters
 @RequestParam is to fetch the query parameters in url 
+
+requests to handle HTTP post method 
+we do use @PostMapping annotation to handle the post method
+and to retrieve the requestBody we do use @RequestBody annotation
+
+@RequestBody annotation has to responsibility to fetch the RequestBody from Http request method to Java Object, by using 
+	spring provided HttpMessageConverter to convert from JSON into Java Object
+
+
+
+
+
