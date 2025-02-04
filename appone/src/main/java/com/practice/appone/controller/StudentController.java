@@ -1,10 +1,7 @@
 package com.practice.appone.controller;
 
 import com.practice.appone.models.Student;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,5 +31,16 @@ public class StudentController {
     @GetMapping("/{id}")
     public Student getStudent(@PathVariable int id) {
         return new Student(id, "first", "second");
+    }
+
+    @GetMapping("query")
+    public Student studentByQueryParameterDetail(@RequestParam int id) {
+        return new Student(id, "query1", "query2");
+    }
+
+    @GetMapping("queries")
+    public Student studentByQueries(@RequestParam int id, @RequestParam String firstName,
+                                    @RequestParam String lastName) {
+        return new Student(id, firstName, lastName);
     }
 }
