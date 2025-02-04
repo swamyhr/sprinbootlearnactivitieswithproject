@@ -52,4 +52,6 @@ some of the annotation
 
 	how to handle multiple query parameters 
 	we need to add multiple @RequestParam type variable 
-	
+
+@PathVariable is to bind value from url to method parameters
+@RequestParam is to fetch the query parameters in url 
