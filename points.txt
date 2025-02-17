@@ -67,7 +67,11 @@ put mapping
 	-> used to update the data in the server
 	-> annotation used is @PutMapping
 	-> @PutMapping will be used to map the incoming HTTP put method to respective controller method to process
-
-
+	-> we should provide record id to select and update
+	
+Delete Mapping
+	-> to remove the record in the datasource
+	-> annotation used is @DeleteMapping
+	-> we should send record id to be selected and perform operation
 
 
