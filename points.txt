@@ -63,6 +63,10 @@ and to retrieve the requestBody we do use @RequestBody annotation
 @RequestBody annotation has to responsibility to fetch the RequestBody from Http request method to Java Object, by using 
 	spring provided HttpMessageConverter to convert from JSON into Java Object
 
+put mapping
+	-> used to update the data in the server
+	-> annotation used is @PutMapping
+	-> @PutMapping will be used to map the incoming HTTP put method to respective controller method to process
 
 
 
