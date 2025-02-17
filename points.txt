@@ -45,3 +45,33 @@ some of the annotation
 	@PathVariable -> one of the way to send data in URL to server 
 	name used in url path mentioned in server side will be used to fetch the data from url
 	for example : student/1 -> in server side for this url the set up would be student/{id} -> here "id" will be used to fetch the detail, here that is student id 1 
+
+@RequestParam -> used to query parameter in request url
+	example -> localhost:8080/users?id={idvalue} > here idValue is queryParameter
+	@RequestParam type variable
+
+	how to handle multiple query parameters 
+	we need to add multiple @RequestParam type variable 
+
+@PathVariable is to bind value from url to method parameters
+@RequestParam is to fetch the query parameters in url 
+
+requests to handle HTTP post method 
+we do use @PostMapping annotation to handle the post method
+and to retrieve the requestBody we do use @RequestBody annotation
+
+@RequestBody annotation has to responsibility to fetch the RequestBody from Http request method to Java Object, by using 
+	spring provided HttpMessageConverter to convert from JSON into Java Object
+
+put mapping
+	-> used to update the data in the server
+	-> annotation used is @PutMapping
+	-> @PutMapping will be used to map the incoming HTTP put method to respective controller method to process
+	-> we should provide record id to select and update
+	
+Delete Mapping
+	-> to remove the record in the datasource
+	-> annotation used is @DeleteMapping
+	-> we should send record id to be selected and perform operation
+
+
