@@ -74,4 +74,14 @@ Delete Mapping
 	-> annotation used is @DeleteMapping
 	-> we should send record id to be selected and perform operation
 
+ResponseEntity class is like whole Http Response of an endpoint
+	-> it is a generic type , we can use any type as response body
+	-> for example a controller method which returns student object response can be replaced/ written with ResponseEntity as follows
+		ResponseEntity<TypeObject> -> ResponseEntity<Student>
+		then syntax is to pass the obejct, then Http status code and manymore
+		while sending the ResponseEntity we need to create an object new ResponseEntity<>(Object, HttpStatus);
+
+
+
+
 

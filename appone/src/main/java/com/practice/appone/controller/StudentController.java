@@ -2,6 +2,8 @@ package com.practice.appone.controller;
 
 import com.practice.appone.models.Student;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -24,9 +26,13 @@ public class StudentController {
     }
 
     @GetMapping("/single")
-    public Student getStudent() {
+    //public Student getStudent() {
+    public ResponseEntity<Student> getStudent(){
         System.out.println("single student");
-        return new Student(1, "firstName1", "secondName1");
+        Student studentOne = new Student(2, "secondFirstName", "secondLastName");
+        //return new Student(1, "firstName1", "secondName1");
+        return new ResponseEntity<>(studentOne, HttpStatus.OK);
+
     }
 
     @GetMapping("/{id}")
