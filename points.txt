@@ -80,7 +80,9 @@ ResponseEntity class is like whole Http Response of an endpoint
 		ResponseEntity<TypeObject> -> ResponseEntity<Student>
 		then syntax is to pass the obejct, then Http status code and manymore
 		while sending the ResponseEntity we need to create an object new ResponseEntity<>(Object, HttpStatus);
-
+	-> we can build and send an object , since Response Entity class comes with overloaded ok method and provides builder and header
+	header is a method call , first argument will be header name and second one will be header value 
+	ResponseEntity.ok().header("bearerToken", "ajgda").body(object)
 
 
 

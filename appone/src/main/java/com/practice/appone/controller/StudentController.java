@@ -15,14 +15,16 @@ import java.util.List;
 public class StudentController {
 
     @GetMapping("")
-    public List<Student> getAll() {
-
+   // public List<Student> getAll() {
+    public ResponseEntity<List<Student>> getAll() {
         List<Student> students = new ArrayList<>();
         students.add(new Student(1, "first1", "second1"));
         students.add(new Student(2, "first2", "second2"));
         students.add(new Student(3, "first3", "second3"));
 
-        return students;
+        //return students;
+        //return ResponseEntity.ok(students);
+        return ResponseEntity.ok().header("bearer", "aegasjgyuc").body(students);
     }
 
     @GetMapping("/single")
@@ -31,7 +33,9 @@ public class StudentController {
         System.out.println("single student");
         Student studentOne = new Student(2, "secondFirstName", "secondLastName");
         //return new Student(1, "firstName1", "secondName1");
-        return new ResponseEntity<>(studentOne, HttpStatus.OK);
+        //return new ResponseEntity<>(studentOne, HttpStatus.OK);
+        //return ResponseEntity.ok(studentOne);
+        return ResponseEntity.ok().header("token", "ahjsgdbasj").body(studentOne);
 
     }
 
